@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "privacy-policy.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "firmm4",
       "title": "FirmM4",
@@ -60,7 +60,8 @@
     "site_lang": "nl",
     "uniqCompNum": 82,
     "versionPublish": "5.6.8",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "publishChangesOnly": true
   },
   "pages": {
     "index.html": {
@@ -1067,11 +1068,11 @@
           "_sourceTheme": "firmm4",
           "_customHTML": "<section class=\"firmm4_features1 features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showLink\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <input type=\"color\" title=\"Color\" value=\"#ffffff\" name=\"bgColor\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background/background.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 title_block\" mbr-if=\"showMainTitle || showMainSubtitle\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    4C-FRAMEWORK</h4>\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\">In<b> vier stappen </b>naar<b> resultaat</b></h3>\n            </div>\n        </div>\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-12 col-lg-3 col-md-6 col-sm-6\">\n                <div class=\"card_wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"icon_block\" mbr-if=\"showIcon\">\n                            <div class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-delivery mobi-mbri\"></span>\n                            </div>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\"><b>1. Collect</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text, .btn_link\">Verzamelen van relevante informatie. Welke items zijn voor de deelnemers belangrijk en waar willen ze het over hebben?</p>\n                        <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\">Read more<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-3 col-md-6 col-sm-6\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card_wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"icon_block\" mbr-if=\"showIcon\">\n                            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-touch mobi-mbri\"></span>\n                            </div>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\"><b>2. Choose</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text, .btn_link\">Kies uit alle verzamelde items die onderwerpen waar we echt tijd aan gaan besteden. Uiteraard een gezamenlijke beslissing van alle deelnemers!</p>\n                        <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\">Read more<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-3 col-md-6 col-sm-6\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card_wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"icon_block\" mbr-if=\"showIcon\">\n                            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-idea mobi-mbri\"></span>\n                            </div>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\"><b>3. Create</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text, .btn_link\">Verzamel zoveel mogelijk oplossingen of uitkomsten voor de gekozen onderwerpen. Deze gaan straks het echte resultaat opleveren.</p>\n                        <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\">Read more<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-3 col-md-6 col-sm-6\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card_wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"icon_block\" mbr-if=\"showIcon\">\n                            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-like mobi-mbri\"></span>\n                            </div>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\"><b>4. Commit</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text, .btn_link\">Kies uit de gemaakte oplossing de beste oplossing en maak daar een uitvoerbaar plan voor waar we ons allemaal aan committeren!</p>\n                        <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\">Read more<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></a></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "t7p6gAdaGC",
+          "_anchor": "features1-0",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "features1-0"
+          "_params": {}
         },
         {
           "alias": false,
@@ -2591,11 +2592,11 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_cid": "t7pRnIXL6x",
+          "_anchor": "mbr-popup-s",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "mbr-popup-s"
+          "_params": {}
         }
       ]
     },
@@ -3146,11 +3147,11 @@
           "_cid": "sk0BN0LxSS",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "menu1-3",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-3"
+          "_params": {}
         },
         {
           "alias": false,
@@ -3418,11 +3419,11 @@
           "_sourceTheme": "firmm4",
           "_customHTML": "<section class=\"tabs firmm4_tabs4\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" group=\"Tabs\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input name=\"fullWidth\" title=\"Full Width\" type=\"checkbox\">\n\t\t<input name=\"reverse\" title=\"Reverse\" type=\"checkbox\">\n\t\t<input inline max=\"10\" min=\"0\" name=\"paddingTop\" step=\"1\" title=\"Top\" type=\"range\" value=\"5\">\n\t\t<input inline max=\"10\" min=\"0\" name=\"paddingBottom\" step=\"1\" title=\"Bottom\" type=\"range\" value=\"5\">\n\t\t<input max=\"8\" min=\"4\" name=\"textWidth\" step=\"1\" title=\"Width\" type=\"range\" value=\"6\">\n\t\t<header>Show/Hide</header>\n\t\t<input checked name=\"showTitle\" title=\"Title\" type=\"checkbox\">\n\t\t<input checked name=\"showText\" title=\"Text\" type=\"checkbox\">\n\t\t<input checked name=\"showButtons\" title=\"Buttons\" type=\"checkbox\">\n\t\t<header>Tabs</header>\n\t\t<select name=\"bootstrapTabs\" title=\"Count\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option selected value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t</select> <input name=\"tabsColor\" title=\"Color\" type=\"color\" value=\"#6a7c92\">\n\t\t<input name=\"activeColor\" title=\"Active Color\" type=\"color\" value=\"#bac043\">\n\t\t<header>Background</header>\n\t\t<fieldset name=\"bg\" parallax type=\"background\">\n\t\t\t<input title=\"Image\" type=\"image\" value=\"../_images/background/background.jpg\">\n\t\t\t<input selected title=\"Color\" type=\"color\" value=\"#ffffff\">\n\t\t\t<input title=\"Video\" type=\"video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input checked condition=\"bg.type !== 'color'\" name=\"overlay\" title=\"Overlay\" type=\"checkbox\">\n\t\t<input condition=\"overlay&&bg.type !== 'color'\" name=\"overlayColor\" title=\"Overlay Color\" type=\"color\" value=\"#ffffff\">\n\t\t<input condition=\"overlay&&bg.type !== 'color'\" inline max=\"1\" min=\"0\" name=\"overlayOpacity\" step=\"0.1\" title=\"Opacity\" type=\"range\" value=\"0.7\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\" mbr-class=\"{'flex-row-reverse': reverse}\">\n\t\t\t<div class=\"col-12 col-sm-9 col-lg-{{textWidth}} order-1\">\n\t\t\t\t<div class=\"title_block\" mbr-if=\"showTitle || showText\">\n\t\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">Vergaderen in <b>4 stappen</b></h3>\n\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-theme-style=\"display-4\">Een FindingPurpose workshop wordt op maat gemaakt. Vooraf bepalen we wat het doel is van de workshop. Daarna gaan we aan de slag de workshop op te bouwen volgens het 4C-framework.</p>\n\t\t\t\t</div>\n\t\t\t\t<ul class=\"nav nav-tabs\" role=\"tablist\">\n\t\t\t\t\t<li class=\"nav-item first mbr-fonts-style\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-theme-style=\"display-4\"><a aria-controls=\"#firm4-tab1-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style show active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#tabs4-d_tab0\" role=\"tab\"><strong>Collect</strong></a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 1\" mbr-theme-style=\"display-4\"><a aria-controls=\"#firm4-tab2-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#tabs4-d_tab1\" role=\"tab\"><strong>Choose</strong></a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 2\" mbr-theme-style=\"display-4\"><a aria-controls=\"#firm4-tab3-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#tabs4-d_tab2\" role=\"tab\"><strong>Create</strong></a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 3\" mbr-theme-style=\"display-4\"><a aria-controls=\"#firm4-tab4-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#tabs4-d_tab3\" role=\"tab\"><strong>Commit</strong></a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 4\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t<a aria-controls=\"#firm4-tab5-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#firm4-tab5-content\" id=\"firm4-tab5\" role=\"tab\">\n\t\t\t\t\t\t\t<strong>Design</strong> </a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\" mbr-buttons mbr-if=\"bootstrapTabs > 5\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t<a aria-controls=\"#firm4-tab6-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#firm4-tab6-content\" id=\"firm4-tab6\" role=\"tab\">\n\t\t\t\t\t\t\t<strong>Architecture</strong> </a></li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"tab-content\">\n\t\t\t\t\t<div aria-labelledby=\"firm4-tab1\" class=\"tab-pane active\" id=\"firm4-tab1-content\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t<p class=\"tab_text mbr-fonts-style\" data-app-selector=\".tab_text, .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tDe eerste 'C' is van Collect, ofwel het verzamelen van uitdagingen waar het team tegenaan loopt met betrekking tot het onderwerp. Vervolgens worden de gevonden uitdagingen visueel weergegeven zodat iedereen ze begrijpt.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"firm4-tab2\" class=\"tab-pane\" id=\"firm4-tab2-content\" mbr-if=\"bootstrapTabs > 1\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t<p class=\"tab_text mbr-fonts-style\" data-app-selector=\".tab_text, .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tDe tweede 'C' staat voor Choose, kiezen. We gaan in deze stap kiezen met welke items we aan de slag gaan en welke items voor nu minder van belang zijn. Deze stap zorgt voor een goede focus op het doel tijdens de workshop en helpt bezig te zijn met de meest belangrijke zaken.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"firm4-tab3\" class=\"tab-pane\" id=\"firm4-tab3-content\" mbr-if=\"bootstrapTabs > 2\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t<p class=\"tab_text mbr-fonts-style\" data-app-selector=\".tab_text, .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tDe meest creatieve stap, de 'C' van create: maken. In deze stap maken we zoveel mogelijk oplossing voor de gekozen uitdagingen. Tijdens deze stap is niets 'goed' of 'fout'. Het zijn oplossingen die misschien mogelijk zijn of op z'n minst helpen om tot nieuwe oplossingen te komen.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"firm4-tab4\" class=\"tab-pane\" id=\"firm4-tab4-content\" mbr-if=\"bootstrapTabs > 3\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t<p class=\"tab_text mbr-fonts-style\" data-app-selector=\".tab_text, .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tDe laatste 'C' staat voor 'commit' ofwel gaan doen wat we zeggen te gaan doen. In deze stap maken we een uitvoerbaar plan om de meest veelbelovende oplossingen uit de Create stap uit te gaan voeren. Belangrijk is dat we ook meteen de afspraak maken ze daadwerkelijk uit te gaan voeren!</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"firm4-tab5\" class=\"tab-pane\" id=\"firm4-tab5-content\" mbr-if=\"bootstrapTabs > 4\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t<p class=\"tab_text mbr-fonts-style\" data-app-selector=\".tab_text, .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tLorem ipsum, dolor sit amet consectetur adipisicing, elit. Accusantium voluptatibus officiis consequuntur libero, hic, optio repellendus sunt unde, et suscipit id facilis doloremque ea vero quis consequatur in nisi ipsa? </p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"firm4-tab6\" class=\"tab-pane\" id=\"firm4-tab6-content\" mbr-if=\"bootstrapTabs > 5\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t<p class=\"tab_text mbr-fonts-style\" data-app-selector=\".tab_text, .mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium, porro blanditiis repudiandae velit? Atque excepturi iusto quisquam ipsam dolor officiis aliquam labore, fugiat, nemo optio quae blanditiis cum, tenetur.</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-section-btn\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd\" mbr-buttons mbr-if=\"showButtons\" mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" data-app-placeholder=\"Type Text\" href=\"popup:#mbr-popup-r\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-r\" data-bs-target=\"#mbr-popup-r\">Aan de slag?</a></div>\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-sm-9 col-lg\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<img alt src=\"@PROJECT_PATH@/assets/images/4c-687x582.png\">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_cid": "t7pH139UDH",
+          "_anchor": "tabs4-d",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "tabs4-d"
+          "_params": {}
         },
         {
           "alias": false,
@@ -3590,11 +3591,11 @@
           "_cid": "sk0JQp9rXo",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer1-4",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {},
-          "_anchor": "footer1-4"
+          "_params": {}
         },
         {
           "alias": "popup-builder",
@@ -4038,11 +4039,11 @@
           "_cid": "sk0JORQGEy",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer3-5",
           "_protectedParams": [],
           "_global": true,
           "_once": false,
-          "_params": {},
-          "_anchor": "footer3-5"
+          "_params": {}
         }
       ]
     },
@@ -4460,11 +4461,11 @@
           "_cid": "sk0BN0LxSS",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "menu1-t",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-t"
+          "_params": {}
         },
         {
           "alias": false,
@@ -4688,11 +4689,11 @@
           "_sourceTheme": "firmm4",
           "_customHTML": "<section class=\"firmm4_content4\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showLink\" checked>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" value=\"#bac043\" name=\"iconColor\" condition=\"showIcon\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background/background.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row align-items-center justify-content-center\" mbr-class=\"{'flex-row-reverse': reverse}\">\n            <div class=\"col-12 col-md-6 col-sm-8 col-lg order-1\">\n                <div class=\"text-wrapper\">\n                    <div class=\"icon_block\" mbr-if=\"showIcon\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mbrib-paper-plane\"></span>\n                        </div>\n                    </div>\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\">\n                        Geef <b>vergaderingen</b> een vliegende start met een <b>facilitator</b></h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .btn_link\">\n                        Een facilitator die niet begrijpt van de inhoud, wat moet ik daar nu weer mee? Juist dat is de kracht van een goede facilitator. Hij of zij bemoeit zich niet met de inhoud en heeft focus op het proces. De facilitator leidt de vergadering en zorgt dat iedereen aan het woord komt en de vergadering afgesloten wordt met een waardevol resultaat. Iets voor jouw vergaderingen?<br></p>\n                    <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\"></a><a href=\"popup:#mbr-popup-r\" class=\"text-primary\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-r\" data-bs-target=\"#mbr-popup-r\">Laten we aan de slag gaan</a><span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></p>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-7 col-sm-8 col-lg-{{imageWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/facilitator-687x582.png\" alt=\"Mobirise\">\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
           "_cid": "t7pSDIbCdv",
+          "_anchor": "content4-1a",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content4-1a"
+          "_params": {}
         },
         {
           "alias": false,
@@ -4853,11 +4854,11 @@
           "_sourceTheme": "firmm4",
           "_customHTML": "<section class=\"firmm4_features2 features2\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showLink\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background/background.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 title_block\" mbr-if=\"showMainTitle || showMainSubtitle\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    EEN GEFACILITEERDE VERGADERING</h4>\n                <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\">\n                    De <b>voordelen</b> van een <b>externe facilitator</b></h3>\n            </div>\n        </div>\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-12 col-lg-3 col-md-6 col-sm-6\">\n                <div class=\"card_wrapper text-center\">\n                    <div class=\"card-box\">\n                        <div class=\"icon_block\" mbr-if=\"showIcon\">\n                            <div class=\"iconfont-wrapper\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-setting mobi-mbri\"></span>\n                            <div class=\"shape_4 shape\"></div> \n                            <div class=\"shape_2 shape\"></div>\n                            </div>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\"><b>Gestuurd proces</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text, .btn_link\">Een externe facilitator begeleidt het vergader proces gestructureerd. Hierdoor kunnen de deelnemers zich richten op de inhoud.</p>\n                        <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\">Read more<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-3 col-md-6 col-sm-6\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card_wrapper text-center\">\n                    <div class=\"card-box\">\n                        <div class=\"icon_block\" mbr-if=\"showIcon\">\n                            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-users mobi-mbri\"></span>\n                                <div class=\"shape_4 shape\"></div>\n                                <div class=\"shape_2 shape\"></div>\n                            </div>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\"><b>Gelijkwaardigheid&nbsp;</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text, .btn_link\">Alle deelnemers aan de vergadering zijn gelijkwaardig waardoor iedereen gelijke kansen heeft om zijn of haar verhaal te doen.</p>\n                        <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\">Read more<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-3 col-md-6 col-sm-6\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card_wrapper text-center\">\n                    <div class=\"card-box\">\n                        <div class=\"icon_block\" mbr-if=\"showIcon\">\n                            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-target mobi-mbri\"></span>\n                                <div class=\"shape_4 shape\"></div>\n                                <div class=\"shape_2 shape\"></div>\n                            </div>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\"><b>Focus op resultaat</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text, .btn_link\">Doordat de facilitator geen inhoudelijk kennis heeft kan hij of zij de deelnemers naar resultaat sturen. Resultaat, het doel van jouw vergadering!</p>\n                        <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\">Read more<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></a></p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-lg-3 col-md-6 col-sm-6\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card_wrapper text-center\">\n                    <div class=\"card-box\">\n                        <div class=\"icon_block\" mbr-if=\"showIcon\">\n                            <div class=\"iconfont-wrapper\" mbr-if=\"showIcon\">\n                                <span mbr-icon class=\"mbr-iconfont mobi-mbri-cloud mobi-mbri\"></span>\n                                <div class=\"shape_4 shape\"></div>\n                                <div class=\"shape_2 shape\"></div>\n                            </div>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\"><b>Cloud-based</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text, .btn_link\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci itaque facilis, blanditiis.</p>\n                        <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\">Read more<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></a></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "t7pUrREJiq",
+          "_anchor": "features2-1c",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "features2-1c"
+          "_params": {}
         },
         {
           "alias": false,
@@ -4954,11 +4955,11 @@
           "_sourceTheme": "firmm4",
           "_customHTML": "<section class=\"header4 firmm4_header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background/background.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#5e2ced\" condition=\"gradientBg &&bg.type=='color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#6b3df0\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradientOverlay\" checked condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#5e2ced\" condition=\"gradientOverlay && overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\" mbr-class=\"{'flex-row-reverse' : reverse}\">\n            <div class=\"col-lg-6 col-md-7 col-sm-9 col-12 order-1\">\n                <div class=\"title_block text-white\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-section-subtitle\">BETER VERGADEREN</h3>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\"><b>Ook eens aan de slag met een facilitator?</b></h2>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .mbr-section-btn\">Als je tot hier bent gekomen ben je waarschijnlijk overtuigd geraakt van de mogelijkheden. Via de knop hieronder kom je met ons in contact zodat wij je meteen meer kunnen vertellen!</p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-lg btn-primary\" href=\"popup:#mbr-popup-r\" data-app-placeholder=\"Type Text\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-r\" data-bs-target=\"#mbr-popup-r\">Tell me more!</a></div>\n                </div>\n            </div>\n            <div class=\"col-lg-6 col-md-7 col-sm-9 col-12 align-self-end\">\n                    <div class=\"image_block\">\n                <img src=\"@PROJECT_PATH@/assets/images/postits-687x582.png\" alt title>\n                        </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "t7pWFuHmar",
+          "_anchor": "header4-1d",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "header4-1d"
+          "_params": {}
         },
         {
           "alias": false,
@@ -5126,11 +5127,11 @@
           "_cid": "sk0JQp9rXo",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer1-u",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {},
-          "_anchor": "footer1-u"
+          "_params": {}
         },
         {
           "alias": false,
@@ -5241,11 +5242,11 @@
           "_cid": "sk0JORQGEy",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer3-v",
           "_protectedParams": [],
           "_global": true,
           "_once": false,
-          "_params": {},
-          "_anchor": "footer3-v"
+          "_params": {}
         },
         {
           "alias": "popup-builder",
@@ -5574,11 +5575,11 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_cid": "t7pTCUYRuy",
+          "_anchor": "mbr-popup-1b",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "mbr-popup-1b"
+          "_params": {}
         }
       ]
     },
@@ -5996,11 +5997,11 @@
           "_cid": "sk0BN0LxSS",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "menu1-1e",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-1e"
+          "_params": {}
         },
         {
           "alias": false,
@@ -6245,11 +6246,11 @@
           "_sourceTheme": "firmm4",
           "_customHTML": "<section class=\"firmm4_features4 features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showMainSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showLink\" checked>\n        <input type=\"color\" title=\"Icon Color\" value=\"#bac043\" name=\"iconColor\">\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showCardIcon\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <select title=\"Count\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background/background.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverse}\">\n            <div class=\"col-12 col-md-12 col-lg-6\" mbr-if=\"showMainTitle || showMainSubtitle\">\n                <div class=\"title_block\">\n                    <div class=\"icon_block\" mbr-if=\"showIcon\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-delivery mobi-mbri\"></span>\n                        </div>\n                    </div>\n                    <h4 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title, .icon_block\"><b>Wat je </b>gaat leren</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-text, .btn_link\">Zo'n vergader workshop, daar komt meer bij kijken dan bij de plaatselijke boekhandel een pak sticky-notes en sharpies halen.</p>\n                    <p class=\"btn_link mbr-fonts-style\" mbr-if=\"showLink\" mbr-theme-style=\"display-4\" data-app-selector=\".btn_link\"><a href=\"index.html\" class=\"text-secondary\"></a><a href=\"popup:#mbr-popup-1j\" class=\"text-primary\" data-toggle=\"modal\" data-bs-toggle=\"modal\" data-target=\"#mbr-popup-1j\" data-bs-target=\"#mbr-popup-1j\">Klaar voor de training?</a><span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span></p>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-12 col-lg-6\">\n                <div class=\"row\">\n                    <div class=\"col-12 col-lg-6 col-md-6\">\n                        <div class=\"card_wrapper\">\n                            <div class=\"card-box\">\n                                <div class=\"card_icon\" mbr-if=\"showCardIcon\">\n                                    <div class=\"iconfont-wrapper\">\n                                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-idea mobi-mbri\"></span>\n                                    </div>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card_icon\"><b>Voorbereiding</b></h5>\n                                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text\">De voorbereiding is het halve werk. Klopt, maar wat moet je precies doen? Wat moet je wel weten en wat hoef je niet te weten? Wat bespreek je met je opdrachtgever voor de workshop begint? Dat leer je in deze training.</p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"col-12 col-lg-6 col-md-6\" mbr-if=\"cardsAmount > 1\">\n                        <div class=\"card_wrapper\">\n                            <div class=\"card-box\">\n                                <div class=\"card_icon\" mbr-if=\"showCardIcon\">\n                                    <div class=\"iconfont-wrapper\" mbr-if=\"showCardIcon\">\n                                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-setting mobi-mbri\"></span>\n                                    </div>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card_icon\"><b>Uitvoer</b></h5>\n                                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text\">Tijdens de uitvoer van de workshop is het belangrijk je aan een aantal regels te houden. Wanneer praat je mee? Wanneer doe je dat niet? Hoe zorg je voor motivatie? Hoe zorg je voor energie? Na deze training weet je dat allemaal!</p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"col-12 col-lg-6 col-md-6\" mbr-if=\"cardsAmount > 2\">\n                        <div class=\"card_wrapper\">\n                            <div class=\"card-box\">\n                                <div class=\"card_icon\" mbr-if=\"showCardIcon\">\n                                    <div class=\"iconfont-wrapper\" mbr-if=\"showCardIcon\">\n                                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-timer mobi-mbri\"></span>\n                                    </div>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card_icon\"><b>Timebox</b></h5>\n                                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text\">In maximaal 1,5 uur tot resultaat komen? Ga er maar aan staan! Een goed gevoel voor tijd - of beter: timing - is essentieel voor een <b>workshop</b>nerd. Tijdens deze training leer opnieuw klok kijken!</p>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"col-12 col-lg-6 col-md-6\" mbr-if=\"cardsAmount > 3\">\n                        <div class=\"card_wrapper\">\n                            <div class=\"card-box\">\n                                <div class=\"card_icon\" mbr-if=\"showCardIcon\">\n                                    <div class=\"iconfont-wrapper\" mbr-if=\"showCardIcon\">\n                                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-protect mobi-mbri\"></span>\n                                    </div>\n                                </div>\n                                <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card_icon\"><b>Nazorg</b></h5>\n                                <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".card-text\">Gaaf joh, aan het einde van de workshop zijn er afspraken gemaakt, plannen opgesteld en besluiten genomen. Hoe help je jouw opdrachtgever deze ook daadwerkelijk uitvoeren?</p>\n                            </div>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "t7q0cFRSP0",
+          "_anchor": "features4-1i",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "features4-1i"
+          "_params": {}
         },
         {
           "alias": false,
@@ -6417,11 +6418,11 @@
           "_cid": "sk0JQp9rXo",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer1-1f",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {},
-          "_anchor": "footer1-1f"
+          "_params": {}
         },
         {
           "alias": false,
@@ -6532,11 +6533,11 @@
           "_cid": "sk0JORQGEy",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer3-1g",
           "_protectedParams": [],
           "_global": true,
           "_once": false,
-          "_params": {},
-          "_anchor": "footer3-1g"
+          "_params": {}
         },
         {
           "alias": "popup-builder",
@@ -6866,11 +6867,11 @@
           "_anchor": "mbr-popup-1j",
           "_isUserblock": true,
           "_cid": "t7q2cEhteG",
+          "_popupId": "mbr-popup-1j",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_popupId": "mbr-popup-1j"
+          "_params": {}
         }
       ]
     },
@@ -7288,11 +7289,11 @@
           "_cid": "sk0BN0LxSS",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "menu1-1k",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-1k"
+          "_params": {}
         },
         {
           "alias": false,
@@ -7509,11 +7510,11 @@
           "_sourceTheme": "firmm4",
           "_customHTML": "<section class=\"firmm4_content5\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" value=\"#bac043\" name=\"iconColor\" condition=\"showIcon\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background/background.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row align-items-center justify-content-center\" mbr-class=\"{'flex-row-reverse': reverse}\">\n            <div class=\"col-12 col-md-6 col-sm-8 col-lg order-1\">\n                <div class=\"text-wrapper\">\n                    <div class=\"icon_block\" mbr-if=\"showIcon\">\n                        <div class=\"iconfont-wrapper\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <defs> <filter filterUnits=\"userSpaceOnUse\" id=\"filter_svg\" x=\"0px\" y=\"0px\" width=\"124px\" height=\"133px\"> <feOffset in=\"SourceAlpha\" dx=\"0\" dy=\"10\"></feOffset> <feGaussianBlur result=\"blurOut\" stdDeviation=\"5.477\"></feGaussianBlur> <feFlood id=\"blur_svg\" result=\"floodOut\"></feFlood> <feComposite operator=\"atop\" in=\"floodOut\" in2=\"blurOut\"></feComposite> <feComponentTransfer> <feFuncA type=\"linear\" slope=\"0.4\"></feFuncA> </feComponentTransfer> <feMerge> <feMergeNode></feMergeNode> <feMergeNode in=\"SourceGraphic\"></feMergeNode> </feMerge> </filter> <linearGradient id=\"grad_svg\" x1=\"0%\" x2=\"76%\" y1=\"64%\" y2=\"0%\"> <stop id=\"grad_1\" offset=\"0%\" stop-opacity=\"1\"></stop> <stop id=\"grad_2\" offset=\"100%\" stop-opacity=\"1\"></stop> </linearGradient> </defs> <g filter=\"url(#filter_svg)\"> <path fill-rule=\"evenodd\" fill=\"rgb(255, 255, 255)\" d=\"M93.962,40.676 L94.014,71.763 L94.014,71.763 C94.018,73.881 92.902,75.831 91.086,76.878 L64.497,92.210 L64.497,92.210 C62.681,93.257 60.443,93.242 58.627,92.169 L31.971,76.427 L31.971,76.427 C30.160,75.359 29.044,73.400 29.041,71.289 L28.988,40.201 L28.988,40.201 C28.984,38.083 30.101,36.133 31.916,35.086 L58.504,19.752 L58.504,19.752 C60.319,18.705 62.557,18.720 64.373,19.793 L91.030,35.534 L91.030,35.534 C92.842,36.603 93.960,38.563 93.962,40.676 Z\"></path> </g> <path fill=\"url(#grad_svg)\" d=\"M93.962,40.676 L94.014,71.763 L94.014,71.763 C94.018,73.881 92.902,75.831 91.086,76.878 L64.497,92.210 L64.497,92.210 C62.681,93.257 60.443,93.242 58.627,92.169 L31.971,76.427 L31.971,76.427 C30.160,75.359 29.044,73.400 29.041,71.289 L28.988,40.201 L28.988,40.201 C28.984,38.083 30.101,36.133 31.916,35.086 L58.504,19.752 L58.504,19.752 C60.319,18.705 62.557,18.720 64.373,19.793 L91.030,35.534 L91.030,35.534 C92.842,36.603 93.960,38.563 93.962,40.676 Z\"></path> </svg>\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-target mobi-mbri\"></span>\n                        </div>\n                    </div>\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\">\n                        <b>Purpose, Focus, Result</b></h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Komend vanuit de Agile wereld hebben wij heel veel bedrijven zien worstelen met die mindset. Niet dat ze die niet begrepen of wisten hoe ze die in moesten zetten, maar omdat ze niet wisten waar ze moesten beginnen. Vaak was de oorzaak eigenlijk heel simpel: de vraag \"wat is jullie purpose met dit bedrijf?\" kon niet beantwoord worden. Heel jammer want purpose leidt tot focus en focus leidt tot resultaat. Waarom zou dat laatste toch uitblijven?</p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-info-outline\" href=\"#\" data-app-placeholder=\"Type Text\">Read More</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-7 col-sm-8 col-lg-{{imageWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/facilitator-687x582.png\" alt=\"Mobirise\">\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
           "_cid": "t7q4bs4Gh4",
+          "_anchor": "content5-1o",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content5-1o"
+          "_params": {}
         },
         {
           "alias": false,
@@ -7597,11 +7598,11 @@
           "_sourceTheme": "firmm4",
           "_customHTML": "<section class=\"firmm4_content5\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Icon\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" value=\"#bac043\" name=\"iconColor\" condition=\"showIcon\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background/background.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row align-items-center justify-content-center\" mbr-class=\"{'flex-row-reverse': reverse}\">\n            <div class=\"col-12 col-md-6 col-sm-8 col-lg order-1\">\n                <div class=\"text-wrapper\">\n                    <div class=\"icon_block\" mbr-if=\"showIcon\">\n                        <div class=\"iconfont-wrapper\">\n                            <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <defs> <filter filterUnits=\"userSpaceOnUse\" id=\"filter_svg\" x=\"0px\" y=\"0px\" width=\"124px\" height=\"133px\"> <feOffset in=\"SourceAlpha\" dx=\"0\" dy=\"10\"></feOffset> <feGaussianBlur result=\"blurOut\" stdDeviation=\"5.477\"></feGaussianBlur> <feFlood id=\"blur_svg\" result=\"floodOut\"></feFlood> <feComposite operator=\"atop\" in=\"floodOut\" in2=\"blurOut\"></feComposite> <feComponentTransfer> <feFuncA type=\"linear\" slope=\"0.4\"></feFuncA> </feComponentTransfer> <feMerge> <feMergeNode></feMergeNode> <feMergeNode in=\"SourceGraphic\"></feMergeNode> </feMerge> </filter> <linearGradient id=\"grad_svg\" x1=\"0%\" x2=\"76%\" y1=\"64%\" y2=\"0%\"> <stop id=\"grad_1\" offset=\"0%\" stop-opacity=\"1\"></stop> <stop id=\"grad_2\" offset=\"100%\" stop-opacity=\"1\"></stop> </linearGradient> </defs> <g filter=\"url(#filter_svg)\"> <path fill-rule=\"evenodd\" fill=\"rgb(255, 255, 255)\" d=\"M93.962,40.676 L94.014,71.763 L94.014,71.763 C94.018,73.881 92.902,75.831 91.086,76.878 L64.497,92.210 L64.497,92.210 C62.681,93.257 60.443,93.242 58.627,92.169 L31.971,76.427 L31.971,76.427 C30.160,75.359 29.044,73.400 29.041,71.289 L28.988,40.201 L28.988,40.201 C28.984,38.083 30.101,36.133 31.916,35.086 L58.504,19.752 L58.504,19.752 C60.319,18.705 62.557,18.720 64.373,19.793 L91.030,35.534 L91.030,35.534 C92.842,36.603 93.960,38.563 93.962,40.676 Z\"></path> </g> <path fill=\"url(#grad_svg)\" d=\"M93.962,40.676 L94.014,71.763 L94.014,71.763 C94.018,73.881 92.902,75.831 91.086,76.878 L64.497,92.210 L64.497,92.210 C62.681,93.257 60.443,93.242 58.627,92.169 L31.971,76.427 L31.971,76.427 C30.160,75.359 29.044,73.400 29.041,71.289 L28.988,40.201 L28.988,40.201 C28.984,38.083 30.101,36.133 31.916,35.086 L58.504,19.752 L58.504,19.752 C60.319,18.705 62.557,18.720 64.373,19.793 L91.030,35.534 L91.030,35.534 C92.842,36.603 93.960,38.563 93.962,40.676 Z\"></path> </svg>\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-timer mobi-mbri\"></span>\n                        </div>\n                    </div>\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .icon_block\">\n                        <b>Vergaderen</b>, vergaderen, vergaderen, <b>geen resultaat</b></h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Als je niet precies weet wat je moet doen ga je? Jawel, vergaderen! Je praat erover maar zonder purpose, waar praat je dan over? Vergaderen, vergaderen, vergaderen maar het resultaat blijft uit.</p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-info-outline\" href=\"#\" data-app-placeholder=\"Type Text\">Read More</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-7 col-sm-8 col-lg-{{imageWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/4c-687x582.png\" alt=\"Mobirise\">\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
           "_cid": "t7q4Wabo0f",
+          "_anchor": "content5-1p",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content5-1p"
+          "_params": {}
         },
         {
           "alias": false,
@@ -7859,11 +7860,11 @@
           "_cid": "sk0JQp9rXo",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer1-1l",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {},
-          "_anchor": "footer1-1l"
+          "_params": {}
         },
         {
           "alias": false,
@@ -7974,11 +7975,11 @@
           "_cid": "sk0JORQGEy",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer3-1m",
           "_protectedParams": [],
           "_global": true,
           "_once": false,
-          "_params": {},
-          "_anchor": "footer3-1m"
+          "_params": {}
         },
         {
           "alias": "popup-builder",
@@ -8307,11 +8308,11 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_cid": "t7q6qKIbv1",
+          "_anchor": "mbr-popup-1r",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "mbr-popup-1r"
+          "_params": {}
         }
       ]
     },
@@ -8728,11 +8729,11 @@
           "_cid": "sk0BN0LxSS",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "menu1-1s",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-1s"
+          "_params": {}
         },
         {
           "alias": false,
@@ -9169,11 +9170,11 @@
           "_cid": "sk0JQp9rXo",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer1-1t",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {},
-          "_anchor": "footer1-1t"
+          "_params": {}
         },
         {
           "alias": false,
@@ -9284,11 +9285,11 @@
           "_cid": "sk0JORQGEy",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer3-1u",
           "_protectedParams": [],
           "_global": true,
           "_once": false,
-          "_params": {},
-          "_anchor": "footer3-1u"
+          "_params": {}
         },
         {
           "alias": "popup-builder",
@@ -9617,11 +9618,11 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_cid": "t7qiwQGMEa",
+          "_anchor": "mbr-popup-1z",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "mbr-popup-1z"
+          "_params": {}
         }
       ]
     },
@@ -10197,11 +10198,11 @@
           "_cid": "sk0BN0LxSS",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "menu1-22",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-22"
+          "_params": {}
         },
         {
           "alias": false,
@@ -10369,11 +10370,11 @@
           "_cid": "sk0JQp9rXo",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer1-23",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {},
-          "_anchor": "footer1-23"
+          "_params": {}
         },
         {
           "alias": false,
@@ -10484,11 +10485,11 @@
           "_cid": "sk0JORQGEy",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "footer3-24",
           "_protectedParams": [],
           "_global": true,
           "_once": false,
-          "_params": {},
-          "_anchor": "footer3-24"
+          "_params": {}
         }
       ]
     },
@@ -11068,11 +11069,11 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_cid": "t7quokvL2S",
+          "_anchor": "menu1-27",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-27"
+          "_params": {}
         },
         {
           "alias": false,
@@ -11240,11 +11241,11 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_cid": "t7quol1Lyd",
+          "_anchor": "footer1-28",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {},
-          "_anchor": "footer1-28"
+          "_params": {}
         },
         {
           "alias": false,
@@ -11355,11 +11356,11 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
           "_cid": "t7quolrxAp",
+          "_anchor": "footer3-29",
           "_protectedParams": [],
           "_global": true,
           "_once": false,
-          "_params": {},
-          "_anchor": "footer3-29"
+          "_params": {}
         }
       ]
     }
